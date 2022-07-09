@@ -1,0 +1,44 @@
+extends layout 
+block content  
+  header.card-header 
+    h4.card-title Manager registration 
+  form(action="/register" method="POST")
+    .form-row 
+      .col.form-group
+        label(for="firstName") First Name 
+        input.form-control#firstname(type="text" name="firstname") 
+      .col.form-group
+        label(for="secondName") Second Name 
+        input.form-control(type="text" name="secondname")
+    .form-row 
+      .col.form-group
+        label(for="marital status") Marital Status 
+        input.form-control(type="text" name="marital status") 
+      .col.form-group
+        label(for="dob") Date of Birth 
+        input.form-control(type="date" name="dob")    
+    .form-row 
+      .col.form-group
+        label(for="gender") Gender: 
+          div
+        label.form-check.form-check-inline
+          input.form-check-input(type="radio" name="gender" value="Female")
+          span.form-check-label Female
+        label.form-check.form-check-inline
+          input.form-check-input(type="radio" name="gender" value="Male")
+          span.form-check-label Male
+      .col.form-group
+      label(for="telno") Tel no: 
+        input.form-control(type="text" name="telno")
+    .form-row 
+      .col.form-group
+        label(for="role") Role: 
+        select.form-control(type="text" name="role")
+          option(value="agent") Agent
+          option(value="direcotr") Director
+          option(value="manager") Manager
+    .form-row
+      .col.form-group
+        button.submit.btn.btn-primary.btn-block Register
+
+

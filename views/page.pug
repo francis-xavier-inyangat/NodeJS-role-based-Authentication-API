@@ -1,0 +1,60 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Produce sold on Credit
+  link(rel='stylesheet' href='bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet' href='bstrap/css/mdb.min.css')
+  link(rel='stylesheet' href='public/page.css')
+nav.navbar.navbar-dark.bg-dark
+  .container-fluid
+    a.navbar-brand(href='#')
+      img.d-inline-block.align-text-top(src='/img/kgl.png' alt='' width='50' height='50')
+      |             Karibu Groceries Limited
+div
+  .container-fluid
+    #header_content
+      h1 Goods sold on credit(Deffered payment)
+      p#header_caption Fill out correctly the fields
+    hr
+.container-fluid
+form(name='registration' onsubmit='')
+  .row
+    .tableRow.col
+      label Name of buyer
+      input(type='alphanumeric' name='nameofbuyer')
+    .tableRow.col
+      label National ID:
+      input(type='alphabets' name='nationalID')
+  .row
+    .tableRow.col
+      label Location
+      input(type='alphanumeric' name='location')
+    .tableRow.col
+      label Contacts
+      input(type='number')
+  .row
+    .tableRow.col
+      label Amount due
+      input(type='number')
+    .tableRow.col
+      label Sales Agent
+      input(type='alphanumeric')
+  .row
+    .tableRow.col
+      label Due Date :
+      input(type='datetime-local' name='Date')
+    .tableRow.col
+      label Produce name
+      input(type='alphanumeric' name='nameofProduce')
+  .row
+    .tableRow.col
+      label Tonnage
+      input(type='numeric' name='tonnage')
+    .tableRow.col
+      label Date of dispatch
+      input(type='datetime-local' name='nameofthedealer')
+  hr
+  .text-center.p-3(style='background-color: #add8e6')  &copy; 2022 Copyright: Arinaitwe Sheila
+  script(src='/js/bootstrap.bundle.js')
